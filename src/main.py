@@ -1,6 +1,5 @@
-import subprocess
+from whisper import CliWhisper
+
+Cli = CliWhisper.CliWhisper()
 
 
-response = subprocess.run(['./whisper.cpp/build/bin/whisper-cli'])
-
-print(response)
