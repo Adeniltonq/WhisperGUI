@@ -1,5 +1,5 @@
-from whisper import CliWhisper
+from whisper import Cli
+from src.interface.
 
-Cli = CliWhisper.CliWhisper()
-
+import sys
 

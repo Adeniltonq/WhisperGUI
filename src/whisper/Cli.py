@@ -78,7 +78,6 @@ class ConfigVad():
     va_model:TypesArg = field(default_factory= lambda: {'fname':'/', 'COMMAND':'-vm'})
     vad_threshold:TypesArg = field(default_factory= lambda: {'n_float':0.5,'COMMAND':'-vd'})
     vad_min_speech_duration_ms:TypesArg = field(default_factory= lambda: {'n_int':250, 'COMMAND':'-vspd'}) # (0.0-1.0)
-
     vad_min_silence_duration_ms:TypesArg = field(default_factory= lambda: {'n_int':100,'COMMAND':'-vsd'})
     vad_max_speech_duration_s:TypesArg = field(default_factory= lambda: {'n_int':-0,'COMMAND':'-vmsd'} )
     vad_speech_pad_ms:TypesArg = field(default_factory= lambda: {'n_int':30,'COMMAND':'-vp'})
