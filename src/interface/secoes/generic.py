@@ -4,7 +4,7 @@ Frame = customtkinter.CTkFrame
 
 
 class InputValueWidget(Frame):
-    def __init__(self, master, text,label_width=80,entry_width=140):
+    def __init__(self, master, text,label_width=100,entry_width=140):
 
     
 
@@ -17,12 +17,12 @@ class InputValueWidget(Frame):
 
 
 class SwitchWidget(Frame):
-    def __init__(self, master, text,):
-        super().__init__(master)
+    def __init__(self, master, text):
+        super().__init__(master,fg_color="transparent")
 
-        label = customtkinter.CTkLabel(self, text=text,width=40)
-        switch = customtkinter.CTkSwitch(self, width=40)
-
+        label = customtkinter.CTkLabel(self, text=text)
         label.grid(row=0, column=0)
-        switch.grid(row=0, column=1,)
+
+        switch = customtkinter.CTkSwitch(self,text='',width=0,)
+        switch.grid(row=0, column=1,padx=(5,0))
        
