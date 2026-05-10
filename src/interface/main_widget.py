@@ -36,5 +36,5 @@ class MainWidget(CTk):
 
         
 app = MainWidget()
-app.iconbitmap('./icon.png')
+
 app.mainloop()
