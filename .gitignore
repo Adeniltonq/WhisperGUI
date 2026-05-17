@@ -1,2 +1,8 @@
-venv
-whisper.cpp
+venv/
+.env/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+whisper.cpp/

@@ -9,6 +9,7 @@ class TimeWidget(Frame):
     def __init__(self, master):
         super().__init__(master)
 
+        
 
         titulo = customtkinter.CTkLabel(self,text='Tempo',height=30)
         titulo.grid(row=0,column=0,columnspan=2)

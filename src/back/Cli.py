@@ -46,7 +46,6 @@ class ConfigOut():
 @dataclass
 class ConfigWords():
     maximum_segment_length_in_characters:TypesArg = field(default_factory= lambda: {'n_int':0,"COMMAND":"-ml"})
-    translate_from_source_language_to_english:TypesArg = field(default_factory= lambda: {'value_bool':False, "COMMAND":"-tr"})
     split_on_word:TypesArg = field(default_factory= lambda: {'n_int':-1,'COMMAND': '-sow'} )
 
 
@@ -70,6 +69,7 @@ class ConfigTrans():
 class ConfigInput():
     input_audio_file_path:TypesArg = field(default_factory= lambda: {'fname':'/','COMMAND':'-f'})
     language:TypesArg = field(default_factory= lambda: {'lang':'auto', 'COMMAND':'-l'})
+    translate_from_source_language_to_english:TypesArg = field(default_factory= lambda: {'value_bool':False, "COMMAND":"-tr"})
 
 
 @dataclass 
@@ -96,8 +96,7 @@ class CliWhisper():
     conf_input = ConfigInput()
     conf_vad = ConfigVad()
     
-
-
+cli = CliWhisper()
 
 
 
